@@ -1,0 +1,25 @@
+{
+    "name": "disjfa/symfony-mono",
+    "autoload": {
+        "psr-4": {
+            "Disjfa\\TimetableBundle\\": "packages/timetable-bundle/"
+        }
+    },
+    "replace": {
+        "disjfa/timetable-bundle": "self.version"
+    },
+    "type": "monorepo",
+    "authors": [
+        {
+            "name": "disjfa",
+            "email": "disjfa@disjfa.nl"
+        }
+    ],
+    "require": {
+        "sensio/framework-extra-bundle": "^5.1",
+        "symfony/orm-pack": "^1.0"
+    },
+    "require-dev": {
+        "symplify/monorepo-builder-prefixed": "^9.0"
+    }
+}
