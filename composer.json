@@ -20,8 +20,5 @@
     },
     "require-dev": {
         "symplify/monorepo-builder-prefixed": "^9.0"
-    },
-    "extra": {
-        "bra"
     }
 }
