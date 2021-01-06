@@ -3,7 +3,7 @@ name: Split Monorepo Dev-Master
 on:
     push:
         branches:
-            - master
+            - main
 
         # see https://github.community/t/how-to-run-github-actions-workflow-only-for-new-tags/16075/10?u=tomasvotruba
         tags:
@@ -30,7 +30,7 @@ jobs:
                 with:
                     package-directory: 'packages/${{ matrix.package }}'
                     split-repository-organization: 'disjfa'
-                    split-repository-name: 'disjfa/${{ matrix.package }}'
+                    split-repository-name: '${{ matrix.package }}'
                     branch: main
                     user-name: "disjfa"
                     user-email: "disjfa@disjfa.nl"
