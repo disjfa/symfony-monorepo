@@ -41,8 +41,7 @@ jobs:
         strategy:
             fail-fast: false
             matrix:
-                package:
-                    - timetable-bundle
+                package: ${{fromJson(needs.provide_packages_json.outputs.matrix)}}
 
         steps:
             -   uses: actions/checkout@v2
